@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carro de Compras</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <!-- Latest compiled and minified CSS -->
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ml-auto">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="mx-auto">
+          <a class="navbar-brand" href="index-reg.html">
+            <img src="../img/A cat riding a motorcycle (1).png" alt="Logo" style="width:30px;">
+            PetStore
+          </a>
+        </div>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="donacion.html">Suscribirse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mis pedidos</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="perrosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Perros
+              </a>
+              <div class="dropdown-menu" aria-labelledby="perrosDropdown">
+                <a class="dropdown-item" href="#">Comida</a>
+                <a class="dropdown-item" href="#">Accesorios</a>
+                <a class="dropdown-item" href="#">Veterinaria</a>
+                <a class="dropdown-item" href="#">Otros</a>
+              </div>
+            </li>
+      
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="gatosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gatos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="gatosDropdown">
+                <a class="dropdown-item" href="#">Comida</a>
+                <a class="dropdown-item" href="#">Accesorios</a>
+                <a class="dropdown-item" href="#">Veterinaria</a>
+                <a class="dropdown-item" href="#">Otros</a>
+              </div>
+            </li>
+            
+          </ul>
+      
+          <form>
+            <div class="form-group my-5 my-lg-0">
+              <input type="text" class="form-control" id="Buscar" placeholder="Buscar">
+            </div>
+          </form>
+      
+          <div class="Buscar">
+            <form class="form-inline my-5 my-lg-0">
+              <a href="..." class="btn btn-outline-success my-2 my-sm-0 mr-2">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+              </a>
+            </form>
+          </div>
+              </a>
+            </form>
+          </div>
+      
+          <div class="car">
+            <form class="form-inline my-2 my-lg-0">
+              <a href="carrito.html" class="btn btn-outline-success my-2 my-sm-0 mr-2">
+                <i class="fa fa-shopping-cart" style="color: #20cb34;"></i>
+              </a>
+            </form>
+          </div>
+          
+      
+      
+          <div class="log">
+            <form class="form-inline my-2 my-lg-0">
+              <a href="usuario.html" class="btn btn-outline-success my-2 my-sm-0 mr-2">
+                <i class="fa fa-user" style="color: #20cb34;"></i>
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-4">
+        <h1>Carro de Compras</h1>
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="card">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Producto</th>
+                    <th>Imagen</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Plato de comida</td>
+                    <td><img src="https://cdn.shopify.com/s/files/1/0543/9065/3103/products/plato-acero-710ml_50x50.png?v=1631137616" alt="Producto 1"></td>
+                    <td>1</td>
+                    <td>$4.000</td>
+                    <td>$4.000</td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i> Eliminar</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Plato de comida</td>
+                    <td><img src="https://cdn.shopify.com/s/files/1/0543/9065/3103/products/plato-acero-710ml_50x50.png?v=1631137616" alt="Producto 1"></td>
+                    <td>2</td>
+                    <td>$4.000</td>
+                    <td>$8000</td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i> Eliminar</button>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="4"></td>
+                    <td>Total:</td>
+                    <td>$12.000</td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+                
+              </table>
+              <td colspan="5"></td>
+              <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Comprar</button>
+              </td>
+              <div class="modal" tabindex="-1" role="dialog" id="myModal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ingrese los datos de la tarjeta</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="numeroTarjeta">Número de tarjeta</label>
+                          <input type="text" class="form-control" id="numeroTarjeta" placeholder="Ingrese el número de tarjeta">
+                        </div>
+                        <div class="form-group">
+                          <label for="fechaExpiracion">Fecha de expiración</label>
+                          <input type="text" class="form-control" id="fechaExpiracion" placeholder="Ingrese la fecha de expiración">
+                        </div>
+                        <div class="form-group">
+                          <label for="cvv">CVV</label>
+                          <input type="text" class="form-control" id="cvv" placeholder="Ingrese el CVV">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <footer class="text-center text-white" style="background-color: #f1f1f1; position: absolute; bottom: 0; width: 100%">
+          <!-- Grid container -->
+          <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+    
+              <!-- Twitter -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-twitter"></i
+              ></a>
+    
+              <!-- Instagram -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-instagram"></i
+              ></a>
+    
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+    
+          <!-- Copyright -->
+          <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Alex Oliva - Alex Pavez - Isaias Gatica</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+    </div>
+  <!-- Agregamos los scripts de Bootstrap y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
